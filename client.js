@@ -12,8 +12,9 @@ function addClickHandlers() {
 }
 
 function createDiv() {
-  let newDiv = '<div class="divItem">'+ buttonClick +'</div>';
+  let swapButton = '<button type="button" id="swap">Swap</button>';
+  let deleteButton = '<button type="button" id="delButton">Delete</button>';
+  let newDiv = '<div class="divItem">'+ buttonClick+ swapButton + deleteButton +'</div>';
   $('#holdDiv').append(newDiv);
   buttonClick ++;
-
 }
