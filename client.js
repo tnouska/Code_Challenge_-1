@@ -9,7 +9,8 @@ function readyNow() {
 
 function addClickHandlers() {
   $('#genButton').on('click', createDiv);
-  $('#holdDiv').on('click', '#fullDiv', swapColor);
+  $('#holdDiv').on('click', '#swap', swapColor);
+  $('#holdDiv').on('click', '#delButton', deleteDiv);
 }
 
 function createDiv() {
@@ -21,5 +22,8 @@ function createDiv() {
 }
 
 function swapColor() {
-  $(this).toggleClass('redDiv yellowDiv');
+  $(this).parent().toggleClass('redDiv yellowDiv');
+}
+function deleteDiv() {
+  $(this).parent().remove();
 }
