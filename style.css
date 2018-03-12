@@ -1,6 +1,13 @@
-.redDiv{
+.red{
   background-color: red;
 }
-.yellowDiv {
+.yellow{
   background-color: yellow;
+}
+
+.div {
+  padding: 5px;
+  margin: 5px;
+  width: 200px;
+  border-radius: 10px;
 }

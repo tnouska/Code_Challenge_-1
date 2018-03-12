@@ -16,13 +16,13 @@ function addClickHandlers() {
 function createDiv() {
   let swapButton = '<button type="button" id="swap">Swap</button>';
   let deleteButton = '<button type="button" id="delButton">Delete</button>';
-  let newDiv = '<div id="fullDiv"class="redDiv">'+ buttonClick+ swapButton + deleteButton +'</div>';
+  let newDiv = '<div id="fullDiv"class="red div">'+ buttonClick + swapButton + deleteButton +'</div>';
   $('#holdDiv').append(newDiv);
   buttonClick ++;
 }
 
 function swapColor() {
-  $(this).parent().toggleClass('redDiv yellowDiv');
+  $(this).parent().toggleClass('red yellow');
 }
 function deleteDiv() {
   $(this).parent().remove();
