@@ -1,5 +1,8 @@
 $(document).ready(readyNow);
 
+buttonClick = 1;
+
+
 function readyNow() {
   addClickHandlers();
 }
@@ -9,6 +12,8 @@ function addClickHandlers() {
 }
 
 function createDiv() {
-  let newDiv = '<div class="divItem"></div>';
+  let newDiv = '<div class="divItem">'+ buttonClick +'</div>';
   $('#holdDiv').append(newDiv);
+  buttonClick ++;
+
 }
